@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Detalle de usuario</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-list>
+        <ion-list-header>
+            Detalle de usuario
+        </ion-list-header>
+
+        <div *ngFor="let user of users | keyvalue ">
+            <div class="content-center" *ngIf="user.key === 'avatar' ">
+                <img class="avatar" [src]="user.value" />
+            </div>
+            <div class="row content-center">
+                <div *ngIf="user.key === 'first_name'" class="col-md-6">
+                    <h2>{{user.value}}</h2>
+                </div>
+                <div *ngIf="user.key === 'last_name'" class="col-md-6">
+                    <h2>{{user.value}}</h2>
+                </div>
+            </div>
+            <div class="content-center" *ngIf="user.key === 'email' ">
+                <p>{{user.value}}</p>
+            </div>
+        </div>
+
+    </ion-list>
+</ion-content>

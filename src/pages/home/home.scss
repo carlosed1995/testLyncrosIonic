@@ -1,3 +1,116 @@
 page-home {
-
+    .back-button.show-back-button {
+        display: none !important;
+    }
+    .icon-close {
+        font-size: 35px;
+        color: gray;
+        left: 5px;
+        position: relative;
+        top: 10px;
+    }
+    .title-header {
+        position: relative;
+        top: 7px;
+        left: 25px;
+        color: #000;
+        font-weight: 500;
+        display: inline-block
+    }
+    .list-header-md {
+        border-top: none !important;
+    }
+    .toolbar-background-md {
+        border-color: #fff !important;
+        background: #fff !important;
+    }
+    .img-header {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .img-user {
+        display: inline-block;
+        float: right;
+        border-radius: 50%;
+        max-width: 55px;
+    }
+    .content {
+        justify-content: center;
+        display: flex;
+        padding-top: 20px;
+    }
+    /* .header .toolbar-title {
+        background: #fff !important;
+    }*/
+    .title-body {
+        display: flex;
+        position: relative;
+        left: 15px;
+    }
+    .box {
+        -webkit-box-shadow: 0px 0px 11px -5px rgba(115, 114, 115, 1);
+        -moz-box-shadow: 0px 0px 11px -5px rgba(115, 114, 115, 1);
+        box-shadow: 0px 0px 11px -5px rgba(115, 114, 115, 1);
+        width: 95%;
+    }
+    .img-apple {
+        width: 95px;
+        padding: 4px;
+        height: 100px;
+        border-radius: 10px;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    .text-orange {
+        color: #FF5722;
+    }
+    .text-card {
+        font-weight: 500;
+        font-size: 14px;
+        color: #263238;
+    }
+    .text-title {
+        font-weight: 500;
+        color: #000;
+    }
+    .content-box {
+        display: inline-grid;
+    }
+    .text-header-card {
+        font-size: smaller;
+        padding: 7px 0px;
+    }
+    .div-initial {
+        background: #fbbd33;
+        border-radius: 20px;
+        padding: 0px 10px;
+        letter-spacing: 2px;
+        height: 20px;
+    }
+    .text-card-spacing {
+        letter-spacing: 2px;
+    }
+    .div-midle {
+        background: #FBDE33;
+        border-radius: 20px;
+        padding: 0px 10px;
+        left: 2px;
+        letter-spacing: 2px;
+        position: relative;
+        height: 20px;
+    }
+    .div-end {
+        justify-content: flex-end;
+        position: relative;
+        left: 20px;
+    }
+    .content-div {
+        padding-top: 40px;
+    }
+    .content-padding-header {
+        padding-top: 20px;
+    }
+    .p-text {
+        color: #979797;
+        font-size: 12px;
+    }
 }

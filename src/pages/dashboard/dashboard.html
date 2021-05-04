@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button (click)="homePage()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-navbar>
+</ion-header>
+<ion-content fullscreen>
+    <ion-list>
+        <ion-list-header>
+            Lista de usuarios
+        </ion-list-header>
+        <ion-item *ngFor="let user of users">
+
+            <ion-label>
+                <div (click)="detailUser(user.id)" class="row content-center">
+                    <div class="col-md-12">
+                        <ion-avatar slot="start">
+                            <img class="img-user" [src]="user.avatar" />
+                        </ion-avatar>
+                    </div>
+                </div>
+                <div class="row content-text content-center">
+                    <div class="col-md-12">
+                        <h3>{{user.first_name}} {{user.last_name}}</h3>
+                        <p>{{user.email}}</p>
+                    </div>
+                </div>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Cargando..."></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

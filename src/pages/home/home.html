@@ -1,14 +1,91 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar class="navbar">
+        <ion-icon (click)="goBack()" name="close" class="icon-close"></ion-icon>
+        <ion-title class="title-header">Sent Prices</ion-title>
+        <img src="https://reqres.in/img/faces/6-image.jpg" class="img-user" />
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+<ion-content fullscreen>
+
+    <ion-list-header>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-title">Grapes and Olives from Mexico FOB McAllen</h3>
+            </div>
+            <div class="col-md-12">
+                <p class="p-text">Sent by Vince - Salix on 2020-06-15 12:46:23</p>
+            </div>
+        </div>
+        <div class="row content-padding-header">
+            <div class="col-md-12">
+                <h2 class="text-title">Salix comments</h2>
+            </div>
+        </div>
+        <div class="row content-div">
+            <div class="col-md-3 div-initial">
+                <h4 class="text-title">2567 SENT</h4>
+            </div>
+            <div class="col-md-4 div-midle">
+                <h4 class="text-title">21% EMAIL READ</h4>
+            </div>
+            <div class="col-md-5 div-end">
+                <h2 class="text-title">email details </h2>
+            </div>
+        </div>
+
+    </ion-list-header>
+    <ion-list>
+        <div class="title-body">
+            <h6 class="text-title">Sent products</h6>
+        </div>
+        <div class="content">
+            <ion-item class="box">
+
+                <ion-label>
+                    <div class="row">
+                        <div class="text-header-card">
+                            <h2 class="text-card">Red Delicious, Extra Fancy 1 from South Africa</h2>
+                        </div>
+                        <div class="col-md-4 avatar">
+                            <div slot="start">
+                                <img class="img-apple" src="assets/imgs/apple.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-md-8 content-box">
+                            <h2 class="text-card">100/113/125, 18kg</h2>
+                            <h2 class="text-card">20.25 C&F</h2>
+                            <h3 class="text-card text-card-spacing">54 VIEW - <span class="text-orange">6 REPLIES</span></h3>
+                            <p class="text-card text-card-spacing">JUN 2, 2020</p>
+                        </div>
+                    </div>
+                </ion-label>
+            </ion-item>
+
+        </div>
+        <div class="content">
+            <ion-item class="box">
+
+                <ion-label>
+                    <div class="row">
+                        <div class="text-header-card">
+                            <h2 class="text-card">Red Delicious, Extra Fancy 1 from South Africa</h2>
+                        </div>
+                        <div class="col-md-4 avatar">
+                            <div slot="start">
+                                <img class="img-apple" src="assets/imgs/apple.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-md-8 content-box">
+                            <h2 class="text-card">100/113/125, 18kg</h2>
+                            <h2 class="text-card">20.25 C&F</h2>
+                            <h3 class="text-card text-card-spacing">54 VIEW - <span class="text-orange">6 REPLIES</span></h3>
+                            <p class="text-card text-card-spacing">JUN 2, 2020</p>
+                        </div>
+                    </div>
+                </ion-label>
+            </ion-item>
+
+        </div>
+    </ion-list>
 </ion-content>
